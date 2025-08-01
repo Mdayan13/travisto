@@ -6,6 +6,9 @@ import {
   Scripts,
   ScrollRestoration,
 } from "react-router";
+import {registerLicense} from "@syncfusion/ej2-base";
+
+registerLicense(import.meta.env.VITE_SYNC_LICENSE_KEY);
 
 import type { Route } from "./+types/root";
 import "./app.css";
