@@ -4,11 +4,13 @@ import { account, database, appwriteConfig } from "./client";
 
 export const loginWithGoogle = async () => {
   try {
-    account.createOAuth2Session(
+    console.log("enter in LoginWithGoogle")
+     account.createOAuth2Session(
       OAuthProvider.Google,
       `${window.location.origin}/`,
       `${window.location.origin}/404`
-    );
+    )
+    console.log("yeah it stored the Data of user");
   } catch (error) {
     console.error("Error during OAuth2 session creation:", error);
   }
@@ -59,6 +61,39 @@ const getGooglePicture = async (accessToken: string) => {
   }
 };
 
+export const getExistingUser = async (id:string) => {
+  console.log("function name is getExistingUser");
+  
+  try {
+    const {documents, total } = await database.listDocuments(
+      appwriteConfig.databaseId,
+      appwriteConfig.userCollectionId,
+      [Query.equal("accountId",id)]
+    );
+    return total > 0 ? documents[0] : null;
+  } catch (e) {
+    console.log("the error in geeexisting user:==", e);
+  }
+};
+
+export const getAlluser = async (limit: number, offset: number)=> {
+  try{
+    const {documents: users, total} = await database.listDocuments(
+      appwriteConfig.databaseId,
+      appwriteConfig.userCollectionId,
+      [Query.limit(limit), Query.offset(offset)]
+    );
+    
+    if(total == 0) return {users: [], total};
+    
+    return {users,total };
+  }catch(error){
+    console.log("the error found in fn getAlluser:==", error)
+    return { users: [], total: 0 }
+  }
+}
+
+
 export const storeUserData = async () => {
   try {
     const user = await account.get();
@@ -83,39 +118,8 @@ export const storeUserData = async () => {
     );
 
     if (!createdUser.$id) redirect("/sign-in");
+    return createdUser;
   } catch (error) {
     console.error("Error storing user data:", error);
   }
 };
-
-export const getExistingUser = async (id:string) => {
-  console.log("function name is getExistingUser");
-
-  try {
-     const {documents, total } = await database.listDocuments(
-          appwriteConfig.databaseId,
-          appwriteConfig.userCollectionId,
-          [Query.equal("accountId",id)]
-     );
-     return total > 0 ? documents[0] : null;
-  } catch (e) {
-    console.log("the error in geeexisting user:==", e);
-  }
-};
-
-export const getAlluser = async (limit: number, offset: number)=> {
-     try{
-          const {documents: users, total} = await database.listDocuments(
-               appwriteConfig.databaseId,
-               appwriteConfig.userCollectionId,
-               [Query.limit(limit), Query.offset(offset)]
-          );
-
-          if(total == 0) return {users: [], total};
-
-          return {users,total };
-     }catch(error){
-          console.log("the error found in fn getAlluser:==", error)
-          return { users: [], total: 0 }
-     }
-}

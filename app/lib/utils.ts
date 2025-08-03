@@ -106,6 +106,7 @@ export const allTrips = [{
       estimatedPrice: "$4,000",
     },
     ];
+    
 export const DashBoardStats = {
     totalUsers : 10233,
     UserJoined: {currentMonth: 457, lastMonth: 392},
