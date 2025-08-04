@@ -1,19 +1,20 @@
-import React from 'react';
 import { sidebarItems } from '../app/constants/index';
-import { Link, NavLink } from 'react-router';
+import { Link, NavLink, useLoaderData, useNavigate } from 'react-router';
 import { cn } from '~/lib/utils';
+import { logoutUser } from '~/appWrite/auth';
 
 const NavItems = ({handleClck}: {handleClck?:() => void}) => {
-  const user = {
-    name: 'anon',
-    email: 'mdayan 1qaz@gmail.com',
-    imageURI: '/assets/images/david.webp',
-  };
+  const user = useLoaderData();
 
+  const navigate = useNavigate();
+  const handleLogout = async () => {
+    await logoutUser();
+    navigate('/sign-in');
+  }
   return (
     <section className='nav-items'>
       <Link to='/' className='link-logo'>
-        <img src='/public/assets/icons/logo.svg' alt='logo' className='size-[30px]' />
+        <img src='/assets/icons/logo.svg' alt='logo' className='size-[30px]' />
         <h1>TourVisto</h1>
       </Link>
 
@@ -31,7 +32,7 @@ const NavItems = ({handleClck}: {handleClck?:() => void}) => {
                     alt={label}
                     className={`group-hover:brightness-0 group-hover:invert size-0 ${
                       isActive ? 'brightness-0 invert' : 'text-dark-200'
-                    }`}
+                    }`} 
                   />
                   {label}
                 </div>
@@ -41,18 +42,16 @@ const NavItems = ({handleClck}: {handleClck?:() => void}) => {
         </nav>
 
         <footer className='nav-footer'>
-          <img src={user?.imageURI || '/assets/images/david.webp'} alt={user?.name || 'David'} />
+          <img src={user.imageUrl} alt={user.name} referrerPolicy='no-referrer'/>
           <article>
             <h2>{user.name}</h2>
             <p>{user.email}</p>
           </article>
           <button
-            onClick={() => {
-              console.log('logout clicked');
-            }}
+            onClick={handleLogout}
             className='cursor-pointer'
           >
-            <img src='/public/assets/icons/logout.svg' alt='Logout' className='size-[6px]' />
+            <img src='/assets/icons/logout.svg' alt='Logout' className='!size-[30px]' />
           </button>
         </footer>
       </div>

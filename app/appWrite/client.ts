@@ -9,10 +9,7 @@ export const appwriteConfig = {
 }
 
 const client = new Client().setEndpoint(appwriteConfig.endpointUrl).setProject(appwriteConfig.projectId)
-const session = req.cookies['a_session_<PROJECT_ID>']; // Get the session cookie from the request
-if (session) {
-    client.setSession(session);
-}
+
 const account = new Account(client);
 const database = new Databases(client);
 const storage = new Storage(client);

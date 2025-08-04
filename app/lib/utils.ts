@@ -72,7 +72,7 @@ export const user  ={name: 'Adrian'};
 export const allTrips = [{
       id: 1,
       name: "Tropical Rewind",
-      imageUrls: ["/public/assets/images/sample.jpeg"],
+      imageUrls: ["/assets/images/sample.jpeg"],
       itinerary: [{ location: "Thailand" }],
       tags: ["Adventure", "Culture"], 
       travelStyle: "Solo",

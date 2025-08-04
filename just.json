@@ -1,0 +1,84 @@
+        {
+            "id": "3T0DkhdXjIE",
+            "slug": "a-rocky-beach-with-waves-crashing-on-the-shore-3T0DkhdXjIE",
+            "alternative_slugs": {
+                "en": "a-rocky-beach-with-waves-crashing-on-the-shore-3T0DkhdXjIE",
+                "es": "una-playa-rocosa-con-olas-rompiendo-en-la-orilla-3T0DkhdXjIE",
+                "ja": "海岸に打ち寄せる波のある岩場-3T0DkhdXjIE",
+                "fr": "une-plage-rocheuse-avec-des-vagues-qui-secrasent-sur-le-rivage-3T0DkhdXjIE",
+                "it": "una-spiaggia-rocciosa-con-onde-che-si-infrangono-sulla-riva-3T0DkhdXjIE",
+                "ko": "해안에-파도가-부딪히는-바위-해변-3T0DkhdXjIE",
+                "de": "ein-felsiger-strand-mit-wellen-die-an-die-kuste-schlagen-3T0DkhdXjIE",
+                "pt": "uma-praia-rochosa-com-ondas-quebrando-na-costa-3T0DkhdXjIE",
+                "id": "pantai-berbatu-dengan-ombak-yang-menghantam-pantai-3T0DkhdXjIE"
+            },
+            "created_at": "2024-08-20T13:40:45Z",
+            "updated_at": "2025-08-04T10:06:22Z",
+            "promoted_at": null,
+            "width": 4032,
+            "height": 3024,
+            "color": "#738ca6",
+            "blur_hash": "LGH2+q.7D%j[O_00WC-;W=n~WBj?",
+            "description": "On the way to Puducherry",
+            "alt_description": "A rocky beach with waves crashing on the shore",
+            "breadcrumbs": [],
+            "urls": {
+                "raw": "https://images.unsplash.com/photo-1724161179561-e9b991c83ec1?ixid=M3w3ODcyNzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMEJlYWNoZXMlMjB8ZW58MHx8fHwxNzU0MzE3MjY1fDA&ixlib=rb-4.1.0",
+                "full": "https://images.unsplash.com/photo-1724161179561-e9b991c83ec1?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3ODcyNzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMEJlYWNoZXMlMjB8ZW58MHx8fHwxNzU0MzE3MjY1fDA&ixlib=rb-4.1.0&q=85",
+                "regular": "https://images.unsplash.com/photo-1724161179561-e9b991c83ec1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODcyNzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMEJlYWNoZXMlMjB8ZW58MHx8fHwxNzU0MzE3MjY1fDA&ixlib=rb-4.1.0&q=80&w=1080",
+                "small": "https://images.unsplash.com/photo-1724161179561-e9b991c83ec1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODcyNzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMEJlYWNoZXMlMjB8ZW58MHx8fHwxNzU0MzE3MjY1fDA&ixlib=rb-4.1.0&q=80&w=400",
+                "thumb": "https://images.unsplash.com/photo-1724161179561-e9b991c83ec1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODcyNzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMEJlYWNoZXMlMjB8ZW58MHx8fHwxNzU0MzE3MjY1fDA&ixlib=rb-4.1.0&q=80&w=200",
+                "small_s3": "https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1724161179561-e9b991c83ec1"
+            },
+            "links": {
+                "self": "https://api.unsplash.com/photos/a-rocky-beach-with-waves-crashing-on-the-shore-3T0DkhdXjIE",
+                "html": "https://unsplash.com/photos/a-rocky-beach-with-waves-crashing-on-the-shore-3T0DkhdXjIE",
+                "download": "https://unsplash.com/photos/3T0DkhdXjIE/download?ixid=M3w3ODcyNzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMEJlYWNoZXMlMjB8ZW58MHx8fHwxNzU0MzE3MjY1fDA",
+                "download_location": "https://api.unsplash.com/photos/3T0DkhdXjIE/download?ixid=M3w3ODcyNzd8MHwxfHNlYXJjaHwxfHxJbmRpYSUyMEJlYWNoZXMlMjB8ZW58MHx8fHwxNzU0MzE3MjY1fDA"
+            },
+            "likes": 1,
+            "liked_by_user": false,
+            "current_user_collections": [],
+            "sponsorship": null,
+            "topic_submissions": {},
+            "asset_type": "photo",
+            "user": {
+                "id": "XcGZX1S0e7w",
+                "updated_at": "2025-07-30T01:18:15Z",
+                "username": "nickverm",
+                "name": "Nikhil V",
+                "first_name": "Nikhil",
+                "last_name": "V",
+                "twitter_username": null,
+                "portfolio_url": null,
+                "bio": "But how could you live and have no story to tell?",
+                "location": "Remote (India | EU)",
+                "links": {
+                    "self": "https://api.unsplash.com/users/nickverm",
+                    "html": "https://unsplash.com/@nickverm",
+                    "photos": "https://api.unsplash.com/users/nickverm/photos",
+                    "likes": "https://api.unsplash.com/users/nickverm/likes",
+                    "portfolio": "https://api.unsplash.com/users/nickverm/portfolio"
+                },
+                "profile_image": {
+                    "small": "https://images.unsplash.com/profile-1743405983777-6ecde881ae25image?ixlib=rb-4.1.0&crop=faces&fit=crop&w=32&h=32",
+                    "medium": "https://images.unsplash.com/profile-1743405983777-6ecde881ae25image?ixlib=rb-4.1.0&crop=faces&fit=crop&w=64&h=64",
+                    "large": "https://images.unsplash.com/profile-1743405983777-6ecde881ae25image?ixlib=rb-4.1.0&crop=faces&fit=crop&w=128&h=128"
+                },
+                "instagram_username": null,
+                "total_collections": 1,
+                "total_likes": 0,
+                "total_photos": 103,
+                "total_promoted_photos": 0,
+                "total_illustrations": 0,
+                "total_promoted_illustrations": 0,
+                "accepted_tos": true,
+                "for_hire": false,
+                "social": {
+                    "instagram_username": null,
+                    "portfolio_url": null,
+                    "twitter_username": null,
+                    "paypal_email": null
+                }
+            }
+        }

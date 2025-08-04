@@ -8,8 +8,8 @@ export const loginWithGoogle = async () => {
      account.createOAuth2Session(
       OAuthProvider.Google,
       `${window.location.origin}/`,
-      `${window.location.origin}/404`
-    )
+      `${window.location.origin}/404`,
+      )
     console.log("yeah it stored the Data of user");
   } catch (error) {
     console.error("Error during OAuth2 session creation:", error);

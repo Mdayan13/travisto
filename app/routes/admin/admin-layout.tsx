@@ -6,10 +6,12 @@ import { account } from '~/appWrite/client';
 
 export async function clientLoader(){
      try{
+          console.log("clientLoader function is called");
+          
           const user = await account.get();
-          const existingUser = await getExistingUser(user.$id);
-          console.log(`user is ${user} and it satus is ${existingUser?.status === "user"} `)
           if(!user) return redirect("/sign-in")
+               
+          const existingUser = await getExistingUser(user.$id);
           
                if(existingUser?.status === "user"){
                     return redirect("/");

@@ -6,7 +6,6 @@ import { account } from '~/appWrite/client'
 export async function clientLoader() {
   try {
      const user = await account.get()
-
     if (user.$id) return redirect("/");
 
   } catch (error) {
@@ -22,7 +21,7 @@ const signIn = () => {
           <div className='sign-in-card'>
                <header className='header'>
                     <Link to="/" >
-                         <img src='/public//assets/icons/logo.svg' alt="Tour_logo" className='size-[30px]' />
+                         <img src='/assets/icons/logo.svg' alt="Tour_logo" className='size-[30px]' />
                     </Link>
                     <h1 className='p-28-bold text-dark-100'>Tourvisto</h1>
                </header>
@@ -36,8 +35,8 @@ const signIn = () => {
                className='button-class !h-full !w-full'
                onClick={loginWithGoogle}>
                     <img
-                    src='/public/assets/icons/google.svg'
-                    className='size-7'
+                    src='/assets/icons/google.svg'
+                    className='!size-8'
                     alt="Google"
                     />
                     <span className='p-18-semibold text-white'>Sign-In Wit Google</span>

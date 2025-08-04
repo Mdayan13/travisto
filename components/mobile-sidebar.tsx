@@ -11,13 +11,13 @@ const MobileSidebar = () => {
     <div className='mobile-sidebar wrapper'>
      <header>
           <Link to="/" >
-          <img src="/public/assets/icons/logo.svg"
+          <img src="/assets/icons/logo.svg"
           alt="Logo" className='size-[30px]'/>
           <h1>Tourvisto</h1>
           </Link>
 
           <button onClick={handleeClck} >
-               <img src="/public/assets/icons/menu.svg"
+               <img src="/assets/icons/menu.svg"
                alt='Logo'
                className='size-7'/>
           </button>

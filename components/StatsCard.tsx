@@ -22,12 +22,12 @@ const StatsCard = ({headeTitle, total, CurrentMonthCount, LastMonthCount}: Stats
               <h2 className='text-4xl font-semibold'>{total}</h2>
               <div className='flex items-center gap-2'>
                   <figure className='flex items-center gap-1'>
-                      <img src={`/public/assets/icons/${Isdecerement? "arrow-down-red.svg" : "arrow-up-green.svg"}`} alt='Arrow' className='size-5'/>
+                      <img src={`/assets/icons/${Isdecerement? "arrow-down-red.svg" : "arrow-up-green.svg"}`} alt='Arrow' className='size-5'/>
                       <figcaption className={cn("text-sm font-medium", Isdecerement ? 'text-red-500' : "text-green-700")}>{Math.round(percentage)}%</figcaption>
                   </figure>
                       <p className='text-sm text-gray-100 font-medium truncate'> vs Last Month</p>
               </div>
-              <img src={`/public/assets/icons/${Isdecerement ? "decrement.svg" : "increment.svg"}`} 
+              <img src={`/assets/icons/${Isdecerement ? "decrement.svg" : "increment.svg"}`} 
               alt='Chart-Arrow' className='xl:h-full md:h-32 h-full w-full xl:w-32 ' />
         </div>
       </div>

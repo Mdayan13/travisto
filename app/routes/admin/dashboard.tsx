@@ -1,8 +1,13 @@
-import React from 'react'
 import { Headers, TripCard,StatsCard  } from 'components/index';
 import {DashBoardStats, allTrips, users, user} from "~/lib/utils"
+import type { Route } from './+types/admin-layout';
+import { getUser } from '~/appWrite/auth';
+
 const {totalUsers, UserJoined, totalTrips, tripsCreated,userRole } = DashBoardStats;
-const dashboard = () => {
+export const clientLoader = async () => await getUser();
+
+const dashboard = ({loaderData}: Route.ComponentProps) => {
+  const user = loaderData as User || null;
 
   return (
     <main className='dashboard wrapper'>
