@@ -3,7 +3,7 @@ declare interface BaseUser {
   name: string;
   email: string;
   dateJoined: string;
-  imageUrl: string;
+  imageUri: string;
 }
 
 declare interface UserData extends BaseUser {
@@ -95,7 +95,7 @@ declare interface TrendResult {
   percentage: number;
 }
 
-declare interface DashboardStats {
+declare interface dashboardStats {
   totalUsers: number;
   usersJoined: {
     currentMonth: number;

@@ -15,7 +15,7 @@ export const action = async({request}: ActionFunctionArgs) => {
           userId
      } = await request.json()
 
-     const genAI = new GoogleGenAI({apiKey: "AIzaSyBrIIexnjJ6uriUNdUbasUFhMmWxAUQRSA"});
+     const genAI = new GoogleGenAI({apiKey: process.env.VITE_GEMINI_API_KEY});
      const unSplashApiKey = process.env.VITE_UNSPLASH_ACCESS_KEY!;
      try{
      const prompt = `Generate a ${numberOfDays}-day travel itinerary for ${country} based on the following user information:

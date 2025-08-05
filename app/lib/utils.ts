@@ -107,7 +107,7 @@ export const allTrips = [{
     },
     ];
     
-export const DashBoardStats = {
+export const dashboardStats = {
     totalUsers : 10233,
     UserJoined: {currentMonth: 457, lastMonth: 392},
     totalTrips: 2983,

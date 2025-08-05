@@ -204,7 +204,7 @@
         @apply flex flex-col gap-4;
 
         h3 {
-          @apply text-base md:text-xl text-dark-400 font-semibold;
+          @apply text-base md:text-xl border-amber-400 rounded-4xl bg-blue-200 text-dark-400  font-bold;
         }
 
         ul {

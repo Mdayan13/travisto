@@ -8,7 +8,7 @@ interface StatssCard{
 }
 
 const StatsCard = ({headeTitle, total, CurrentMonthCount, LastMonthCount}: StatssCard) => {
-
+console.log(total)
   const{trend, percentage  } = calculateTrendPercentage(CurrentMonthCount, LastMonthCount);
   const Isdecerement = trend == "decrement";
 
